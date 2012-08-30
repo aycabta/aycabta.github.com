@@ -4,7 +4,7 @@
   <title><![CDATA[All Your Code Are Belong To Ass]]></title>
   <link href="http://aycabta.github.com/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
-  <updated>2012-08-30T10:07:22+09:00</updated>
+  <updated>2012-08-30T10:48:57+09:00</updated>
   <id>http://aycabta.github.com/</id>
   <author>
     <name><![CDATA[Code Ass]]></name>
@@ -12,5 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New post for GitHub Pages with Octpress]]></title>
+    <link href="http://aycabta.github.com/blog/2012/08/30/new-post-for-github-pages/"/>
+    <updated>2012-08-30T10:13:00+09:00</updated>
+    <id>http://aycabta.github.com/blog/2012/08/30/new-post-for-github-pages</id>
+    <content type="html"><![CDATA[<p>It&#8217;s very easy and be benefited, make sure you try them out.</p>
+
+<h2>Advantages</h2>
+
+<ul>
+<li>easy to embed gist</li>
+<li>easy to syntax highlighting</li>
+<li>easy to write with chosen notation, markdown and others</li>
+<li>GitHub provides hosting</li>
+</ul>
+
+
+<p>One of the perils of this way is ability to handle a lot of access.
+I want to know how far GitHub Pages can scales.</p>
+
+<h2>Technologies used</h2>
+
+<ul>
+<li>GitHub Pages</li>
+<li>Octpress</li>
+<li>Jekyll (internal)</li>
+</ul>
+
+
+<h2>Referred page</h2>
+
+<p><a href="http://octopress.org/docs/deploying/github/">Deploying to Github Pages</a></p>
+]]></content>
+  </entry>
   
 </feed>
