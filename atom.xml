@@ -4,7 +4,7 @@
   <title><![CDATA[All Your Code Are Belong To Ass]]></title>
   <link href="http://aycabta.github.com/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
-  <updated>2012-09-02T19:26:24+09:00</updated>
+  <updated>2012-09-02T19:37:19+09:00</updated>
   <id>http://aycabta.github.com/</id>
   <author>
     <name><![CDATA[Code Ass]]></name>
@@ -41,6 +41,12 @@ I want to know how far GitHub Pages can scales.</p>
 <li>Jekyll (internal)</li>
 </ul>
 
+
+<h2>Preview</h2>
+
+<p>$ rake preview</p>
+
+<p>And access localhost:4000 in a web browser. It&#8217;s very easy.</p>
 
 <h2>Referred page</h2>
 
