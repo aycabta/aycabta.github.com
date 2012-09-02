@@ -29,7 +29,9 @@ Technologies used
 Preview
 -------
 
-<pre><code>$ rake preview</code></pre>
+``` bash Preview for Octopress
+$ rake preview
+```
 
 And access localhost:4000 in a web browser. It's very easy.
 
