@@ -26,6 +26,25 @@ aside.sidebar {
     @extend .basic-alignment;
     @include shadow-box($border: #fff .3em solid);
   }
+  dl {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+  }
+  dt {
+    list-style: none;
+    padding: 0.5em 0 0 0;
+    margin: 0;
+  }
+  dd {
+    list-style: none;
+    padding: .5em 0;
+    margin: 0 0 0 1em;
+    border-bottom: 1px solid $sidebar-border;
+    @extend .side-shadow-border;
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
   ul {
     margin-bottom: 0.5em;
     margin-left: 0;

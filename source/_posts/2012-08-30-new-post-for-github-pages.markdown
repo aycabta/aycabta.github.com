@@ -26,6 +26,13 @@ Technologies used
 * Octopress
 * Jekyll (internal)
 
+Preview
+-------
+
+<pre><code>$ rake preview</code></pre>
+
+And access localhost:4000 in a web browser. It's very easy.
+
 Referred page
 -------------
 [Deploying to Github Pages](http://octopress.org/docs/deploying/github/)
