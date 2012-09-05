@@ -3,7 +3,7 @@ layout: post
 title: "New post for GitHub Pages with Octopress"
 date: 2012-08-30 10:13
 comments: true
-tags: Octopress Blog
+categories: Octopress Blog
 ---
 
 It's very easy and be benefited, make sure you try them out.
