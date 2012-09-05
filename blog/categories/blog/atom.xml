@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[All Your Code Are Belong To Ass]]></title>
-  <link href="http://aycabta.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Blog | All Your Code Are Belong To Ass]]></title>
+  <link href="http://aycabta.github.com/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
   <updated>2012-09-05T22:21:09+09:00</updated>
   <id>http://aycabta.github.com/</id>
@@ -18,7 +18,7 @@
     <link href="http://aycabta.github.com/blog/2012/08/30/new-post-for-github-pages/"/>
     <updated>2012-08-30T10:13:00+09:00</updated>
     <id>http://aycabta.github.com/blog/2012/08/30/new-post-for-github-pages</id>
-    <content type="html"><![CDATA[<p>It&#8217;s very easy and be benefited, make sure you try them out.</p>
+    <content type="html"><![CDATA[<p>It's very easy and be benefited, make sure you try them out.</p>
 
 <h2>Advantages</h2>
 
@@ -44,12 +44,11 @@ I want to know how far GitHub Pages can scales.</p>
 
 <h2>Preview</h2>
 
-<figure class='code'><figcaption><span>Preview for Octopress</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake preview
-</span></code></pre></td></tr></table></div></figure>
+<p><code>bash Preview for Octopress
+$ rake preview
+</code></p>
 
-
-<p>And access localhost:4000 in a web browser. It&#8217;s very easy.</p>
+<p>And access localhost:4000 in a web browser. It's very easy.</p>
 
 <h2>Referred page</h2>
 
