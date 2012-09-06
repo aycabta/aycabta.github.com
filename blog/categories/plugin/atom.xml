@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | All Your Code Are Belong To Ass]]></title>
-  <link href="http://aycabta.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <title><![CDATA[Category: plugin | All Your Code Are Belong To Ass]]></title>
+  <link href="http://aycabta.github.com/blog/categories/plugin/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
   <updated>2012-09-06T20:50:47+09:00</updated>
   <id>http://aycabta.github.com/</id>
@@ -34,49 +34,6 @@ This plugin support it very easy.</p>
 <h2>Sample</h2>
 
 <p><a href="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/">Previois entry in this blog</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New post for GitHub Pages with Octopress]]></title>
-    <link href="http://aycabta.github.com/blog/2012/08/30/new-post-for-github-pages-with-octopress/"/>
-    <updated>2012-08-30T10:13:00+09:00</updated>
-    <id>http://aycabta.github.com/blog/2012/08/30/new-post-for-github-pages-with-octopress</id>
-    <content type="html"><![CDATA[<p>It's very easy and be benefited, make sure you try them out.</p>
-
-<h2>Advantages</h2>
-
-<ul>
-<li>easy to embed gist</li>
-<li>easy to syntax highlighting</li>
-<li>easy to write with chosen notation, markdown and others</li>
-<li>GitHub provides hosting</li>
-</ul>
-
-
-<p>One of the perils of this way is ability to handle a lot of access.
-I want to know how far GitHub Pages can scales.</p>
-
-<h2>Technologies used</h2>
-
-<ul>
-<li>GitHub Pages</li>
-<li>Octopress</li>
-<li>Jekyll (internal)</li>
-</ul>
-
-
-<h2>Preview</h2>
-
-<p><code>bash Preview for Octopress
-$ rake preview
-</code></p>
-
-<p>And access localhost:4000 in a web browser. It's very easy.</p>
-
-<h2>Referred page</h2>
-
-<p><a href="http://octopress.org/docs/deploying/github/">Deploying to Github Pages</a></p>
 ]]></content>
   </entry>
   

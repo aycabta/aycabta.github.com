@@ -4,7 +4,7 @@
   <title><![CDATA[All Your Code Are Belong To Ass]]></title>
   <link href="http://aycabta.github.com/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
-  <updated>2012-09-06T18:15:01+09:00</updated>
+  <updated>2012-09-06T20:50:47+09:00</updated>
   <id>http://aycabta.github.com/</id>
   <author>
     <name><![CDATA[Code Ass]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[File Binder for Octopress Released]]></title>
+    <link href="http://aycabta.github.com/blog/2012/09/06/file-binder-for-octopress-released/"/>
+    <updated>2012-09-06T18:17:00+09:00</updated>
+    <id>http://aycabta.github.com/blog/2012/09/06/file-binder-for-octopress-released</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/aycabta/octopress-file-binder">File Binder for Octopress</a></p>
+
+<p>It is difficult to attach image or other files on entry.
+This plugin support it very easy.</p>
+
+<h2>Usage</h2>
+
+<p>Install to plugins directory.</p>
+
+<p>If you wrote a entry in &#8220;source/<em>posts/YYYY-DD-MM-title-of-a-entiry.markdown&#8221;, you can attach the files that are given the name of &#8220;source/</em>posts/YYYY-DD-MM-title-of-a-entiry_filename-of-image.png&#8221; for example. The attached file puts out into the same directory of the entry by the name of &#8220;filename-of-image.png&#8221;, in this case it is &#8220;public/blog/YYYY/DD/MM/title-of-a-entry/filename-of-image.png&#8221;. You can refer the file from the entry by img or others tags.</p>
+
+<p>Support customized permalink in _config.yml that is different from &#8220;/blog/:year/:month/:day/:title/&#8221;.</p>
+
+<h2>Sample</h2>
+
+<p><a href="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/">Previois entry in this blog</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Receive VoIP settings for WAKWAK Phone]]></title>
@@ -45,7 +69,7 @@ $ cd wakwakphone</code></pre></noscript></div></li>
 <li>Reconfigure terminal infomation
 
 <ul>
-<li><img src="./reconfigure.png"></li>
+<li><img src="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/reconfigure.png"></li>
 </ul>
 </li>
 <li>Save terminal configuration password</li>
@@ -55,13 +79,13 @@ $ cd wakwakphone</code></pre></noscript></div></li>
 <li>Input the configuration password that is saved
 
 <ul>
-<li><img src="./password-is-required.png"></li>
+<li><img src="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/password-is-required.png"></li>
 </ul>
 </li>
 <li>Input &#8220;machine:8989&#8221; and submit, &#8220;machine&#8221; is your machine&#8217;s IP address or hostname
 
 <ul>
-<li><img src="./run-configuration.png"></li>
+<li><img src="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/run-configuration.png"></li>
 <li>Settings is written in hidden parameter in this page</li>
 </ul>
 </li>
