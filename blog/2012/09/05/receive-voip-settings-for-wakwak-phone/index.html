@@ -4,11 +4,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Octopress - All Your Code Are Belong To Ass</title>
+  <title>Receive VoIP settings for WAKWAK Phone - All Your Code Are Belong To Ass</title>
   <meta name="author" content="Code Ass">
 
   
-  <meta name="description" content="Category: Octopress">
+  <meta name="description" content="WAKWAK that is a ISP provides IP phone, the free to deal, by the name of &#8220;WAKWAK Phone&#8221;.
+It need to have a IP phone that is implemented &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -17,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://aycabta.github.comblog/categories/octopress/">
+  <link rel="canonical" href="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,36 +63,149 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Octopress</h1>
+    
+      <h1 class="entry-title">Receive VoIP Settings for WAKWAK Phone</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-05T22:53:00+09:00" pubdate data-updated="true">2012-09-05T22:53:00:z</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>WAKWAK that is a ISP provides IP phone, the free to deal, by the name of <a href="http://www.wakwak.com/service/phone/">&#8220;WAKWAK Phone&#8221;</a>.
+It need to have a IP phone that is implemented &#8220;voip-setup.cgi&#8221; as root of HTTP.
+But I want to save VoIP&#8217;s settings into a router,
+so I made <a href="https://github.com/aycabta/wakwakphone">receive VoIP&#8217;s settings software</a>.</p>
 
-  
-  <h2>2012</h2>
+<h2>Approach</h2>
 
-<article>
-  
-<h1><a href="/blog/2012/08/30/new-post-for-github-pages-with-octopress/">New post for GitHub Pages with Octopress</a></h1>
-<time datetime="2012-08-30T10:13:00+09:00" pubdate><span class='month'>Aug</span> <span class='day'>30</span> <span class='year'>2012</span></time>
+<ol>
+<li><p>Clone code from GitHub</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/blog/'>Blog</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a></span>
-</footer>
+<ul>
+<li><div><script src='https://gist.github.com/3653287.js?file='></script>
+<noscript><pre><code>$ git clone git://github.com/aycabta/wakwakphone.git
+$ cd wakwakphone</code></pre></noscript></div></li>
+</ul>
+</li>
+<li><p>Run receive VoIP&#8217;s settings software</p>
 
+<ul>
+<li><div><script src='https://gist.github.com/3653313.js?file='></script>
+<noscript><pre><code>$ ruby ./voip-setup.cgi</code></pre></noscript></div></li>
+</ul>
+</li>
+<li><p>Access to WAKWAK Online User Support</p></li>
+<li>Reconfigure terminal infomation
 
-</article>
+<ul>
+<li><img src="./reconfigure.png"></li>
+</ul>
+</li>
+<li>Save terminal configuration password</li>
+<li>Receive e-mail that is written the configuration URL</li>
+<li>Access the URL, maybe it likes &#8221;<em>https://cust.lmc.xephion.ne.jp:48443/xcpvcs/index.html?id=0123456789ABCDEF0123456789ABCDEF0123456789ABCD</em>&#8221;</li>
+<li>Automatically be redirected to &#8221;<em>https://cust.lmc.xephion.ne.jp:48443/xcpvcs/servlet/IADURLParseAndSetServlet?id=0123456789ABCDEF0123456789ABCDEF0123456789ABCD</em>&#8221; by JavaScript if URL above</li>
+<li>Input the configuration password that is saved
+
+<ul>
+<li><img src="./password-is-required.png"></li>
+</ul>
+</li>
+<li>Input &#8220;machine:8989&#8221; and submit, &#8220;machine&#8221; is your machine&#8217;s IP address or hostname
+
+<ul>
+<li><img src="./run-configuration.png"></li>
+<li>Settings is written in hidden parameter in this page</li>
+</ul>
+</li>
+<li>Look at logs of receive VoIP&#8217;s settings software, settings is outputed
+
+<ul>
+<li><div><script src='https://gist.github.com/3653353.js?file='></script>
+<noscript><pre><code>&quot;sip: 05011111111@ss01.lmc.xephion.ne.jp&quot;
+&quot;server address: 61.125.11.182&quot;
+&quot;user ID: 0123456789ABCDEF0123456789ABCDEF&quot;
+&quot;password: FEDCBA9876543210FEDCBA9876543210&quot;</code></pre></noscript></div></li>
+</ul>
+</li>
+</ol>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Code Ass</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-05T22:53:00+09:00" pubdate data-updated="true">2012-09-05T22:53:00:z</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/voip/'>VoIP</a>, <a class='category' href='/blog/categories/wakwak/'>WAKWAK</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/08/30/new-post-for-github-pages-with-octopress/" title="Previous Post: New post for GitHub Pages with Octopress">&laquo; New post for GitHub Pages with Octopress</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -193,7 +307,10 @@
       var disqus_shortname = 'aycabta';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/';
+        var disqus_url = 'http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

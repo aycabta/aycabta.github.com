@@ -4,7 +4,7 @@
   <title><![CDATA[All Your Code Are Belong To Ass]]></title>
   <link href="http://aycabta.github.com/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
-  <updated>2012-09-06T01:25:07+09:00</updated>
+  <updated>2012-09-06T18:15:01+09:00</updated>
   <id>http://aycabta.github.com/</id>
   <author>
     <name><![CDATA[Code Ass]]></name>
@@ -12,6 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Receive VoIP settings for WAKWAK Phone]]></title>
+    <link href="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/"/>
+    <updated>2012-09-05T22:53:00+09:00</updated>
+    <id>http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone</id>
+    <content type="html"><![CDATA[<p>WAKWAK that is a ISP provides IP phone, the free to deal, by the name of <a href="http://www.wakwak.com/service/phone/">&#8220;WAKWAK Phone&#8221;</a>.
+It need to have a IP phone that is implemented &#8220;voip-setup.cgi&#8221; as root of HTTP.
+But I want to save VoIP&#8217;s settings into a router,
+so I made <a href="https://github.com/aycabta/wakwakphone">receive VoIP&#8217;s settings software</a>.</p>
+
+<h2>Approach</h2>
+
+<ol>
+<li><p>Clone code from GitHub</p>
+
+<ul>
+<li><div><script src='https://gist.github.com/3653287.js?file='></script>
+<noscript><pre><code>$ git clone git://github.com/aycabta/wakwakphone.git
+$ cd wakwakphone</code></pre></noscript></div></li>
+</ul>
+</li>
+<li><p>Run receive VoIP&#8217;s settings software</p>
+
+<ul>
+<li><div><script src='https://gist.github.com/3653313.js?file='></script>
+<noscript><pre><code>$ ruby ./voip-setup.cgi</code></pre></noscript></div></li>
+</ul>
+</li>
+<li><p>Access to WAKWAK Online User Support</p></li>
+<li>Reconfigure terminal infomation
+
+<ul>
+<li><img src="./reconfigure.png"></li>
+</ul>
+</li>
+<li>Save terminal configuration password</li>
+<li>Receive e-mail that is written the configuration URL</li>
+<li>Access the URL, maybe it likes &#8221;<em>https://cust.lmc.xephion.ne.jp:48443/xcpvcs/index.html?id=0123456789ABCDEF0123456789ABCDEF0123456789ABCD</em>&#8221;</li>
+<li>Automatically be redirected to &#8221;<em>https://cust.lmc.xephion.ne.jp:48443/xcpvcs/servlet/IADURLParseAndSetServlet?id=0123456789ABCDEF0123456789ABCDEF0123456789ABCD</em>&#8221; by JavaScript if URL above</li>
+<li>Input the configuration password that is saved
+
+<ul>
+<li><img src="./password-is-required.png"></li>
+</ul>
+</li>
+<li>Input &#8220;machine:8989&#8221; and submit, &#8220;machine&#8221; is your machine&#8217;s IP address or hostname
+
+<ul>
+<li><img src="./run-configuration.png"></li>
+<li>Settings is written in hidden parameter in this page</li>
+</ul>
+</li>
+<li>Look at logs of receive VoIP&#8217;s settings software, settings is outputed
+
+<ul>
+<li><div><script src='https://gist.github.com/3653353.js?file='></script>
+<noscript><pre><code>&quot;sip: 05011111111@ss01.lmc.xephion.ne.jp&quot;
+&quot;server address: 61.125.11.182&quot;
+&quot;user ID: 0123456789ABCDEF0123456789ABCDEF&quot;
+&quot;password: FEDCBA9876543210FEDCBA9876543210&quot;</code></pre></noscript></div></li>
+</ul>
+</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New post for GitHub Pages with Octopress]]></title>

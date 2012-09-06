@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: WAKWAK | All Your Code Are Belong To Ass]]></title>
+  <link href="http://aycabta.github.com/blog/categories/wakwak/atom.xml" rel="self"/>
+  <link href="http://aycabta.github.com/"/>
+  <updated>2012-09-06T18:15:01+09:00</updated>
+  <id>http://aycabta.github.com/</id>
+  <author>
+    <name><![CDATA[Code Ass]]></name>
+    <email><![CDATA[aycabta@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Receive VoIP settings for WAKWAK Phone]]></title>
+    <link href="http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone/"/>
+    <updated>2012-09-05T22:53:00+09:00</updated>
+    <id>http://aycabta.github.com/blog/2012/09/05/receive-voip-settings-for-wakwak-phone</id>
+    <content type="html"><![CDATA[<p>WAKWAK that is a ISP provides IP phone, the free to deal, by the name of <a href="http://www.wakwak.com/service/phone/">"WAKWAK Phone"</a>.
+It need to have a IP phone that is implemented "voip-setup.cgi" as root of HTTP.
+But I want to save VoIP's settings into a router,
+so I made <a href="https://github.com/aycabta/wakwakphone">receive VoIP's settings software</a>.</p>
+
+<h2>Approach</h2>
+
+<ol>
+<li>Clone code from GitHub
+
+<ul>
+<li><div><script src='https://gist.github.com/3653287.js?file='></script>
+<noscript><pre><code>$ git clone git://github.com/aycabta/wakwakphone.git
+$ cd wakwakphone</code></pre></noscript></div>
+</li>
+</ul>
+</li>
+<li>Run receive VoIP's settings software
+
+<ul>
+<li><div><script src='https://gist.github.com/3653313.js?file='></script>
+<noscript><pre><code>$ ruby ./voip-setup.cgi</code></pre></noscript></div>
+</li>
+</ul>
+</li>
+<li>Access to WAKWAK Online User Support</li>
+<li>Reconfigure terminal infomation
+
+<ul>
+<li><img src="./reconfigure.png"></li>
+</ul>
+</li>
+<li>Save terminal configuration password</li>
+<li>Receive e-mail that is written the configuration URL</li>
+<li>Access the URL, maybe it likes "<em>https://cust.lmc.xephion.ne.jp:48443/xcpvcs/index.html?id=0123456789ABCDEF0123456789ABCDEF0123456789ABCD</em>"</li>
+<li>Automatically be redirected to "<em>https://cust.lmc.xephion.ne.jp:48443/xcpvcs/servlet/IADURLParseAndSetServlet?id=0123456789ABCDEF0123456789ABCDEF0123456789ABCD</em>" by JavaScript if URL above</li>
+<li>Input the configuration password that is saved
+
+<ul>
+<li><img src="./password-is-required.png"></li>
+</ul>
+</li>
+<li>Input "machine:8989" and submit, "machine" is your machine's IP address or hostname
+
+<ul>
+<li><img src="./run-configuration.png"></li>
+<li>Settings is written in hidden parameter in this page</li>
+</ul>
+</li>
+<li>Look at logs of receive VoIP's settings software, settings is outputed
+
+<ul>
+<li><div><script src='https://gist.github.com/3653353.js?file='></script>
+<noscript><pre><code>&quot;sip: 05011111111@ss01.lmc.xephion.ne.jp&quot;
+&quot;server address: 61.125.11.182&quot;
+&quot;user ID: 0123456789ABCDEF0123456789ABCDEF&quot;
+&quot;password: FEDCBA9876543210FEDCBA9876543210&quot;</code></pre></noscript></div>
+</li>
+</ul>
+</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
