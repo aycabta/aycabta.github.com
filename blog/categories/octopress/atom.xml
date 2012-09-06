@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | All Your Code Are Belong To Ass]]></title>
   <link href="http://aycabta.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
-  <updated>2012-09-06T21:25:26+09:00</updated>
+  <updated>2012-09-06T21:32:17+09:00</updated>
   <id>http://aycabta.github.com/</id>
   <author>
     <name><![CDATA[Code Ass]]></name>
@@ -36,7 +36,7 @@ You can refer the files from the entry by img or others tags.</p>
 <p>Replace "./" that is head of src in a img tag with config['url'] + "/blog/YYYY/DD/MM/title-of-a-entry/".
 config['url'] is written in _config.yml with "url: ".
 So src is published absolute path without problems
-if you write <img src="./filename-of-image.png">.</p>
+if you write {% img ./filename-of-image.png %}.</p>
 
 <p>Support customized permalink in _config.yml that is different from "/blog/:year/:month/:day/:title/".</p>
 
