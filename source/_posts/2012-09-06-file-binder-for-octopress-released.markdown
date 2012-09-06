@@ -25,7 +25,7 @@ You can refer the files from the entry by img or others tags.
 Replace "./" that is head of src in a img tag with config['url'] + "/blog/YYYY/DD/MM/title-of-a-entry/".
 config['url'] is written in _config.yml with "url: ".
 So src is published absolute path without problems
-if you write {% img ./filename-of-image.png %}.
+if you write {{ "{% img ./filename-of-image.png " }}%}.
 
 Support customized permalink in _config.yml that is different from "/blog/:year/:month/:day/:title/".
 
