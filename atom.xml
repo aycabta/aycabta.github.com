@@ -4,7 +4,7 @@
   <title><![CDATA[All Your Code Are Belong To Ass]]></title>
   <link href="http://aycabta.github.com/atom.xml" rel="self"/>
   <link href="http://aycabta.github.com/"/>
-  <updated>2012-09-06T20:57:28+09:00</updated>
+  <updated>2012-09-06T21:25:26+09:00</updated>
   <id>http://aycabta.github.com/</id>
   <author>
     <name><![CDATA[Code Ass]]></name>
@@ -20,14 +20,23 @@
     <id>http://aycabta.github.com/blog/2012/09/06/file-binder-for-octopress-released</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/aycabta/octopress-file-binder">File Binder for Octopress</a></p>
 
-<p>It is difficult to attach image or other files on entry.
-This plugin support it very easy.</p>
+<p>It is difficult to attach some images or other files on a entry.
+This plugin supports it very easy.</p>
 
 <h2>Usage</h2>
 
 <p>Install to plugins directory.</p>
 
-<p>If you wrote a entry in &#8220;source/<em>posts/YYYY-DD-MM-title-of-a-entiry.markdown&#8221;, you can attach the files that are given the name of &#8220;source/</em>posts/YYYY-DD-MM-title-of-a-entiry_filename-of-image.png&#8221; for example. The attached file puts out into the same directory of the entry by the name of &#8220;filename-of-image.png&#8221;, in this case it is &#8220;public/blog/YYYY/DD/MM/title-of-a-entry/filename-of-image.png&#8221;. You can refer the file from the entry by img or others tags.</p>
+<p>If you wrote a entry in &#8220;source/<em>posts/YYYY-DD-MM-title-of-a-entiry.markdown&#8221;,
+you can attach the files that are given the name of &#8220;source/</em>posts/YYYY-DD-MM-title-of-a-entiry_filename-of-image.png&#8221; for example.
+The attached file puts out into the same directory of the entry by the name of &#8220;filename-of-image.png&#8221;,
+in this case it is &#8220;public/blog/YYYY/DD/MM/title-of-a-entry/filename-of-image.png&#8221;.
+You can refer the files from the entry by img or others tags.</p>
+
+<p>Replace &#8220;./&#8221; that is head of src in a img tag with config[&#8216;url&#8217;] + &#8220;/blog/YYYY/DD/MM/title-of-a-entry/&#8221;.
+config[&#8216;url&#8217;] is written in _config.yml with &#8220;url: &#8220;.
+So src is published absolute path without problems
+if you write <img src="http://aycabta.github.com/blog/2012/09/06/file-binder-for-octopress-released/filename-of-image.png">.</p>
 
 <p>Support customized permalink in _config.yml that is different from &#8220;/blog/:year/:month/:day/:title/&#8221;.</p>
 
